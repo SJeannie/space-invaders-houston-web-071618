@@ -11,7 +11,14 @@ class Spaceship {
     this.assignCrew();
   }
 
+  // assignCrew() {
+  //   this.crew.forEach(
+  //     function(member){
+  //       member.currentShip = this
+  //     }.bind(this)
+  //   )
+  // }
+
   assignCrew() {
     this.crew.forEach((member) => (member.currentShip = this));
   }
-}
